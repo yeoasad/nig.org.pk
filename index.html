@@ -15,7 +15,24 @@
       background-color: #005792;
       color: white;
       padding: 20px 40px;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .header-content img {
+      height: 60px;
+    }
+    .header-content h2 {
+      margin: 0;
+      font-size: 28px;
+    }
+    .subheading {
       text-align: center;
+      margin-top: 10px;
     }
     .content {
       max-width: 600px;
@@ -40,13 +57,22 @@
       font-size: 14px;
       color: #888;
     }
+    a {
+      color: #005792;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h2>National Institute of Health</h2>
-    <p>Islamabad, Pakistan</p>
+    <div class="header-content">
+      <img src="nih-logo-white.svg" alt="NIH Logo">
+      <h2>National Institute of Health</h2>
+    </div>
+    <div class="subheading">
+      <p>Islamabad, Pakistan</p>
+    </div>
   </header>
 
   <div class="content">
@@ -56,7 +82,7 @@
   </div>
 
   <footer>
-    &copy; 2025 National Institute of Health | For verification, visit <a href="https://www.nih.org.pk" target="_blank">www.nih.org.pk</a>
+    &copy; 2025 National Institute of Health | For official info, visit <a href="https://www.nih.org.pk" target="_blank">www.nih.org.pk</a>
   </footer>
 
 </body>
